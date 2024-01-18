@@ -1,0 +1,61 @@
+h1 {
+  color: red;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 0.75s, visibility 0.75s; /* corrected */
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#loader::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 10px solid green;
+  border-top-color: aqua;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+h2{
+    color: blue;
+    text-align: center;
+font-family: sans-serif;
+}
+.auto{
+    width: 500px;
+    margin: 10px auto;
+}
+img{
+    width: 400px;
+}
